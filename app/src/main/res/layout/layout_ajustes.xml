@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:layout_gravity="center">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+                    <!--<com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputNombre"
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        android:theme="@style/AppTheme">
+
+                        <EditText
+                            android:id="@+id/editTextNombre"
+                            style="@style/modifiedEditText"
+                            android:hint="@string/hint_name"
+                            android:inputType="textPersonName"
+                            android:maxLines="1"
+                            android:theme="@style/AppTheme"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputEmail"
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        android:theme="@style/AppTheme">
+                        <EditText
+                            android:id="@+id/editTextEmail"
+                            style="@style/modifiedEditText"
+                            android:hint="@string/hint_email"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputTelefono"
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        android:theme="@style/AppTheme">
+                        <EditText
+                            android:id="@+id/editTextTelefono"
+                            style="@style/modifiedEditText"
+                            android:hint="@string/hint_telefono"
+                            android:inputType="phone"
+                            android:maxLines="1"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputPassword"
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        android:theme="@style/AppTheme">
+                        <EditText
+                            android:id="@+id/editTextPassword"
+                            style="@style/modifiedEditText"
+                            android:hint="@string/hint_password"
+                            android:inputType="textPassword"
+                            android:maxLines="1"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputNuevo"
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        android:theme="@style/AppTheme">
+                        <EditText
+                            android:id="@+id/editTextNuevo"
+                            style="@style/modifiedEditText"
+                            android:hint="@string/hint_newpasswrod"
+                            android:inputType="textPassword"
+                            android:maxLines="1"/>
+                    </com.google.android.material.textfield.TextInputLayout>-->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputName"
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        app:helperText="@string/dajelo_blanco">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextName"
+                            style="@style/modifiedEditText"
+                            android:drawableLeft="@drawable/ic_baseline_person_24"
+                            android:hint="@string/hint_name"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPersonName"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputEmail"
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        app:helperText="@string/dajelo_blanco">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextEmail"
+                            style="@style/modifiedEditText"
+                            android:drawableLeft="@drawable/ic_baseline_email_24"
+                            android:hint="@string/hint_email"
+                            android:imeOptions="actionDone"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputTelefono"
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        app:helperText="@string/dajelo_blanco">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextTelefono"
+                            style="@style/modifiedEditText"
+                            android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+                            android:hint="@string/hint_telefono"
+                            android:imeOptions="actionDone"
+                            android:inputType="phone"
+                            android:maxLines="1" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputPassword"
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        app:helperText="@string/dajelo_blanco">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextPassword"
+                            style="@style/modifiedEditText"
+                            android:drawableLeft="@drawable/ic_baseline_lock_24"
+                            android:hint="@string/hint_password"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputNuevoPassword"
+                        style="@style/parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextNuevoPassword"
+                            style="@style/modifiedEditText"
+                            android:drawableLeft="@drawable/ic_baseline_lock_24"
+                            android:hint="@string/hint_newpasswrod"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword"
+                            android:maxLines="1" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                        android:id="@+id/btnGuardar"
+                        style="@style/loginButton"
+                        android:text="Guardar Cambios"
+                        app:spinning_bar_width="4dp"
+                        app:spinning_bar_color="#FFF"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        app:initialCornerAngle="27dp"
+                        app:spinning_bar_padding="6dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

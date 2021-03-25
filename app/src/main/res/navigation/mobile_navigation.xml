@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.leothan.alguarisa.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.leothan.alguarisa.ui.cuenta.CuentaFragment"
+        android:label="@string/menu_perfil"
+        tools:layout="@layout/fragment_cuenta" />
+
+    <fragment
+        android:id="@+id/nav_usuarios"
+        android:name="com.leothan.alguarisa.ui.usuarios.UsuariosFragment"
+        android:label="@string/usuarios"
+        tools:layout="@layout/fragment_usuarios" />
+    <fragment
+        android:id="@+id/nav_cerrar"
+        android:name="com.leothan.alguarisa.ui.cerrar.CerrarFragment"
+        android:label="@string/cerrar"
+        tools:layout="@layout/fragment_cerrar" />
+    <fragment
+        android:id="@+id/nav_ajustes"
+        android:name="com.leothan.alguarisa.ui.ajustes.AjustesFragment"
+        android:label="@string/menu_setting"
+        tools:layout="@layout/fragment_ajustes" />
+    <fragment
+        android:id="@+id/nav_buscar"
+        android:name="com.leothan.alguarisa.ui.buscar.BuscarFragment"
+        android:label="@string/menu_buscar"
+        tools:layout="@layout/fragment_buscar" />
+    <fragment
+        android:id="@+id/nav_familias"
+        android:name="com.leothan.alguarisa.ui.familias.FamiliasFragment"
+        android:label="@string/familias"
+        tools:layout="@layout/fragment_familias" />
+    <fragment
+        android:id="@+id/nav_modulo_clap"
+        android:name="com.leothan.alguarisa.ui.modulo_clap.ModuloClapFragment"
+        android:label="@string/modulo_clap"
+        tools:layout="@layout/fragment_modulo_clap" />
+    <fragment
+        android:id="@+id/nav_ferias_campo"
+        android:name="com.leothan.alguarisa.ui.ferias_campo.FeriasCampoFragment"
+        android:label="@string/ferias_campo"
+        tools:layout="@layout/fragment_ferias_campo" />
+    <fragment
+        android:id="@+id/nav_plan_proteico"
+        android:name="com.leothan.alguarisa.ui.plan_proteico.PlanProteicoFragment"
+        android:label="@string/plan_proteico"
+        tools:layout="@layout/fragment_plan_proteico" />
+    <fragment
+        android:id="@+id/nav_tienda_fisica"
+        android:name="com.leothan.alguarisa.ui.tienda_fisica.TiendaFisicaFragment"
+        android:label="@string/tienda_fisica"
+        tools:layout="@layout/fragment_tienda_fisica" />
+    <fragment
+        android:id="@+id/nav_tienda_enlinea"
+        android:name="com.leothan.alguarisa.ui.tienda_enlinea.TiendaEnlineaFragment"
+        android:label="@string/tienda_enlinea"
+        tools:layout="@layout/fragment_tienda_enlinea" />
+    <fragment
+        android:id="@+id/nav_tienda_movil"
+        android:name="com.leothan.alguarisa.ui.tienda_movil.TiendaMovilFragment"
+        android:label="@string/tienda_movil"
+        tools:layout="@layout/fragment_tienda_movil" />
+</navigation>

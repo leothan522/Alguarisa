@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical"
+    tools:showIn="@layout/fragment_cuenta">
+
+    <!--<TextView
+        style="@style/headerText"
+        android:text="Account Info"
+        android:layout_marginBottom="20dp"/>-->
+
+    <RelativeLayout style="@style/profileDetailsLayout">
+
+        <ImageView
+            android:id="@+id/nameImageView"
+            style="@style/profileDetailsImage"
+            android:src="@drawable/ic_name" />
+
+        <TextView
+            style="@style/profileDetailsTextMain"
+            android:layout_toRightOf="@id/nameImageView"
+            android:text="Nombre" />
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/profileDetailsMiniText"
+            android:layout_toRightOf="@id/nameImageView"
+            android:text="Nombre Apellido" />
+
+    </RelativeLayout>
+
+    <View style="@style/proifleDetailsView" />
+
+    <RelativeLayout style="@style/profileDetailsLayout">
+
+        <ImageView
+            android:id="@+id/mobileImageView"
+            style="@style/profileDetailsImage"
+            android:src="@drawable/ic_mobile" />
+
+        <TextView
+            style="@style/profileDetailsTextMain"
+            android:layout_toRightOf="@id/mobileImageView"
+            android:text="Telefono" />
+
+        <TextView
+            android:id="@+id/telefono"
+            style="@style/profileDetailsMiniText"
+            android:layout_toRightOf="@id/mobileImageView"
+            android:text="00000000000" />
+
+    </RelativeLayout>
+
+    <View style="@style/proifleDetailsView" />
+
+    <RelativeLayout style="@style/profileDetailsLayout">
+
+        <ImageView
+            android:id="@+id/emailImageView"
+            style="@style/profileDetailsImage"
+            android:src="@drawable/ic_email" />
+
+        <TextView
+            style="@style/profileDetailsTextMain"
+            android:layout_toRightOf="@id/emailImageView"
+            android:text="Email" />
+
+        <TextView
+            android:id="@+id/email"
+            style="@style/profileDetailsMiniText"
+            android:layout_toRightOf="@id/emailImageView"
+            android:text="ejamplo@correo.com" />
+
+    </RelativeLayout>
+
+    <View style="@style/proifleDetailsView" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"/>
+
+
+</LinearLayout>

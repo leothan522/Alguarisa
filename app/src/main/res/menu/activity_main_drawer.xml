@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_modulo_clap"
+            android:icon="@drawable/ic_baseline_supervised_user_circle_24"
+            android:title="@string/modulo_clap" />
+        <item
+            android:id="@+id/nav_ferias_campo"
+            android:icon="@drawable/ic_baseline_family_restroom_24"
+            android:title="@string/ferias_campo" />
+        <item
+            android:id="@+id/nav_plan_proteico"
+            android:icon="@drawable/ic_baseline_set_meal_24"
+            android:title="@string/plan_proteico" />
+        <item
+            android:id="@+id/nav_tienda_fisica"
+            android:icon="@drawable/ic_baseline_store_24"
+            android:title="@string/tienda_fisica" />
+        <item
+            android:id="@+id/nav_tienda_enlinea"
+            android:icon="@drawable/ic_baseline_storefront_24"
+            android:title="@string/tienda_enlinea" />
+        <item
+            android:id="@+id/nav_tienda_movil"
+            android:icon="@drawable/ic_baseline_local_shipping_24"
+            android:title="@string/tienda_movil" />
+        <item
+            android:id="@+id/nav_usuarios"
+            android:icon="@drawable/ic_baseline_groups_24"
+            android:title="@string/usuarios" />
+
+    </group>
+</menu>
