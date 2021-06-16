@@ -22,8 +22,9 @@ class Url {
     fun direccion(name: NombreUrl): String{
 
         //val hosting = "http://192.168.250.9"
-        val hosting = "http://alguarisa.sportec.info"
-        val android = "/php-android"
+        //val hosting = "http://alguarisa.sportec.info"
+        val hosting = "https://alguarisa.com"
+        val android = "/android"
         val laravel = "/proyecto/public"
 
         val local = false
